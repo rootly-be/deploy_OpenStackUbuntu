@@ -108,10 +108,8 @@ export OS_USER_DOMAIN_NAME=Default
 export OS_PROJECT_DOMAIN_NAME=Default
 export OS_AUTH_URL=http://$HOSTNAME:5000/v3
 export OS_IDENTITY_API_VERSION=3
+export DB_ROOT_PASS=$DB_ROOT_PASS
+export RABBIT_PASS=$RABBIT_PASS
 EOF
 
-# Displaying generated passwords
-echo "DB ROOT PASSWORD : $DB_ROOT_PASS"
-echo "RABBIT PASSWORD : $RABBIT_PASS"
-echo "ADMIN PASSWORD : $ADMIN_PASS"
-echo "KEYSTONE DB PASS : $KEYSTONE_DBPASS"
+# wget https://github.com/rootly-be/deploy_OpenStackUbuntu/raw/main/1-Keystone/0-install.sh
